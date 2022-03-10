@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domasna 2", "Domasna 2\Domasna 2.csproj", "{25A21FA8-EB01-4880-BBF8-1903362EC1D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domasna 2-1", "Domasna 2-1\Domasna 2-1.csproj", "{7320BA82-1B93-4563-A454-A2B23DB62395}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25A21FA8-EB01-4880-BBF8-1903362EC1D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25A21FA8-EB01-4880-BBF8-1903362EC1D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25A21FA8-EB01-4880-BBF8-1903362EC1D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25A21FA8-EB01-4880-BBF8-1903362EC1D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7320BA82-1B93-4563-A454-A2B23DB62395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7320BA82-1B93-4563-A454-A2B23DB62395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7320BA82-1B93-4563-A454-A2B23DB62395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7320BA82-1B93-4563-A454-A2B23DB62395}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3DBDE20-74E1-4F87-85DE-49517AE52554}
+	EndGlobalSection
+EndGlobal
