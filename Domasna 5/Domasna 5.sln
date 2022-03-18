@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task 1 - Substrings", "Task 1 - Substrings\Task 1 - Substrings.csproj", "{86148536-6062-479F-8298-7E967693F12C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task 2 - Age Calculator", "Task 2 - Age Calculator\Task 2 - Age Calculator.csproj", "{0C8990F4-5013-46E1-B034-4B3EE9FD538F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86148536-6062-479F-8298-7E967693F12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86148536-6062-479F-8298-7E967693F12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86148536-6062-479F-8298-7E967693F12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86148536-6062-479F-8298-7E967693F12C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8990F4-5013-46E1-B034-4B3EE9FD538F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8990F4-5013-46E1-B034-4B3EE9FD538F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8990F4-5013-46E1-B034-4B3EE9FD538F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8990F4-5013-46E1-B034-4B3EE9FD538F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0A720A9-7D66-4DBA-A53A-F88371BF8C02}
+	EndGlobalSection
+EndGlobal
