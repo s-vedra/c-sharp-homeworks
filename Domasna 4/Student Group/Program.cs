@@ -11,8 +11,8 @@ namespace Student_Group
             while (true)
             {
                 Console.WriteLine("Type the group where you want to add your students");
-                string answer = Console.ReadLine();
-                if (answer != "G1" && answer != "g1" && answer != "G2" && answer != "g2")
+                string answer = Console.ReadLine().ToLower();
+                if (answer != "g1" && answer != "g2")
                 {
                     Console.WriteLine("The group can't be found");
                     continue;
@@ -21,14 +21,14 @@ namespace Student_Group
                 {
 
                     string inputStudent = Console.ReadLine();
-                    if (answer == "G1" || answer == "g1")
+                    if (answer == "g1")
                     {
 
                         Array.Resize(ref G1, G1.Length + 1);
                         G1[^1] = inputStudent;
 
                     }
-                    else if (answer == "G2" || answer == "g2")
+                    else if (answer == "g2")
                     {
                         Array.Resize(ref G2, G2.Length + 1);
                         G2[^1] = inputStudent;
