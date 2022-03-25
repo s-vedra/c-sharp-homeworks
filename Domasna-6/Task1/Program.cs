@@ -72,6 +72,32 @@ namespace Task1
             }
             return carTwo;
         }
+        //method to show the car options
+        public static void ShowCarOptions(Car[] cars)
+        {
+            Console.WriteLine("Options:");
+            for (int i = 0; i < cars.Length; i++)
+            {
+                if (cars[i].Selected)
+                {
+                    Console.WriteLine($"{i + 1}.{cars[i].Model} - First Car", Console.ForegroundColor = ConsoleColor.Yellow);
+                }
+                else { Console.WriteLine($"{i + 1}.{cars[i].Model}", Console.ForegroundColor = ConsoleColor.Blue); }
+            }
+        }
+        //method to show the driver options
+        public static void ShowDriverOptions(Driver[] drivers)
+        {
+            Console.WriteLine("Options:");
+            for (int i = 0; i < drivers.Length; i++)
+            {
+                if (drivers[i].Selected)
+                {
+                    Console.WriteLine($"{i + 1}.{drivers[i].Name} - First Driver", Console.ForegroundColor = ConsoleColor.Blue);
+                }
+                else { Console.WriteLine($"{i + 1}.{drivers[i].Name}", Console.ForegroundColor = ConsoleColor.Red); }
+            }
+        }
         static void Main(string[] args)
         {
      
@@ -94,54 +120,36 @@ namespace Task1
                 break;
             }
         }
+
+      
         public static void RaceCarGame(Car[] cars, Driver[] drivers)
         {
             Console.Clear();
             //given options for the cars
             Console.WriteLine("Choose your first car");
-                Console.WriteLine("Options:");
-                for (int i = 0; i < cars.Length; i++)
-                {
-                    Console.WriteLine($"{i + 1}.{cars[i].Model}", Console.ForegroundColor = ConsoleColor.Red);
-                }
+
+                ShowCarOptions(cars);
                 Car carOne = CarSelector(cars);
                 Console.Clear();
                
             //given options for the drivers
                 Console.WriteLine("Choose your driver for the first car");
-                Console.WriteLine("Options:");
-                for (int i = 0; i < drivers.Length; i++)
-                {
-                    Console.WriteLine($"{i + 1}.{drivers[i].Name}", Console.ForegroundColor = ConsoleColor.Green);
-                }
+
+                ShowDriverOptions(drivers);
                 Driver driverCarOne = carOne.Driver = DriverSelector(drivers);
                 Console.Clear();
 
             //given option for the second car, but here the first car will be in a different color 
                 Console.WriteLine("Choose your second car");
-                Console.WriteLine("Options:");
-                for (int i = 0; i < cars.Length; i++)
-                {
-                    if (cars[i].Selected)
-                    {
-                        Console.WriteLine($"{i + 1}.{cars[i].Model} - First Car", Console.ForegroundColor = ConsoleColor.Yellow);
-                    }
-                    else { Console.WriteLine($"{i + 1}.{cars[i].Model}", Console.ForegroundColor = ConsoleColor.Blue); }
-                }
+
+                ShowCarOptions(cars);
                 Car carTwo = CarSelector(cars);
                 Console.Clear();
 
             //option for the second driver, but here the first driver will be in a different color
                 Console.WriteLine("Choose your driver for the second car");
-                Console.WriteLine("Options:");
-                for (int i = 0; i < drivers.Length; i++)
-                {
-                    if (drivers[i].Selected)
-                    {
-                        Console.WriteLine($"{i + 1}.{drivers[i].Name} - First Driver", Console.ForegroundColor = ConsoleColor.Blue);
-                    }
-                    else { Console.WriteLine($"{i + 1}.{drivers[i].Name}", Console.ForegroundColor = ConsoleColor.Red); }
-                }
+
+                ShowDriverOptions(drivers);
                 Driver driverCarTwo = carTwo.Driver = DriverSelector(drivers);
                 Car winner = RaceCars(carOne, carTwo);
             //reseting the selected value if the player chooses to play again
@@ -150,8 +158,7 @@ namespace Task1
                 driverCarOne.Selected = false;
                 driverCarTwo.Selected = false;
 
-                Console.WriteLine( $"The car that won was {winner.Model.ToString().ToUpper()}, with the speed of {winner.Speed}km/h and the driver was {winner.Driver.Name.ToString().ToUpper()}");
-                 
+                Console.WriteLine( $"The car that won was {winner.Model.ToString().ToUpper()}, with the speed of {winner.Speed}km/h and the driver was {winner.Driver.Name.ToString().ToUpper()}"); 
         }
 
     }
