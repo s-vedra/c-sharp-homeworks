@@ -48,7 +48,7 @@ namespace Task1
                 }
                 if (drivers[selectDriver - 1].Selected)
                 {
-                    Console.WriteLine("Car already picked");
+                    Console.WriteLine("Driver already picked");
                     continue;
                 }
 
