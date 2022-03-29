@@ -12,7 +12,7 @@ namespace Task1
 
             while (true)
             {
-                
+
                 if (!int.TryParse(Console.ReadLine(), out int selectCar) || selectCar > cars.Length || selectCar < 1)
                 {
                     Console.WriteLine("Invalid input");
@@ -35,7 +35,7 @@ namespace Task1
                 }
 
             }
-        }   
+        }
         //method to return the driver that the user chose
         public static Driver DriverSelector(Driver[] drivers)
         {
@@ -100,15 +100,15 @@ namespace Task1
         }
         static void Main(string[] args)
         {
-     
-            Car[] cars = {new Car("hyundai", 160), new Car("mazda", 200), new Car("ferrari", 260), new Car("porsche", 210) };
+
+            Car[] cars = { new Car("hyundai", 160), new Car("mazda", 200), new Car("ferrari", 260), new Car("porsche", 210) };
             Driver[] drivers = { new Driver("bob", 2.5M), new Driver("greg", 4.5M), new Driver("jill", 5.00M), new Driver("anne", 3.9M) };
-            
-            RaceCarGame(cars,drivers);
-            
+
+            RaceCarGame(cars, drivers);
+
             while (true)
             {
-               
+
                 Console.WriteLine("Do you want to play again?");
                 string answer = Console.ReadLine().ToLower();
                 if (answer == "yes")
@@ -121,44 +121,44 @@ namespace Task1
             }
         }
 
-      
+
         public static void RaceCarGame(Car[] cars, Driver[] drivers)
         {
             Console.Clear();
             //given options for the cars
             Console.WriteLine("Choose your first car");
 
-                ShowCarOptions(cars);
-                Car carOne = CarSelector(cars);
-                Console.Clear();
-               
-            //given options for the drivers
-                Console.WriteLine("Choose your driver for the first car");
+            ShowCarOptions(cars);
+            Car carOne = CarSelector(cars);
+            Console.Clear();
 
-                ShowDriverOptions(drivers);
-                Driver driverCarOne = carOne.Driver = DriverSelector(drivers);
-                Console.Clear();
+            //given options for the drivers
+            Console.WriteLine("Choose your driver for the first car");
+
+            ShowDriverOptions(drivers);
+            Driver driverCarOne = carOne.Driver = DriverSelector(drivers);
+            Console.Clear();
 
             //given option for the second car, but here the first car will be in a different color 
-                Console.WriteLine("Choose your second car");
+            Console.WriteLine("Choose your second car");
 
-                ShowCarOptions(cars);
-                Car carTwo = CarSelector(cars);
-                Console.Clear();
+            ShowCarOptions(cars);
+            Car carTwo = CarSelector(cars);
+            Console.Clear();
 
             //option for the second driver, but here the first driver will be in a different color
-                Console.WriteLine("Choose your driver for the second car");
+            Console.WriteLine("Choose your driver for the second car");
 
-                ShowDriverOptions(drivers);
-                Driver driverCarTwo = carTwo.Driver = DriverSelector(drivers);
-                Car winner = RaceCars(carOne, carTwo);
+            ShowDriverOptions(drivers);
+            Driver driverCarTwo = carTwo.Driver = DriverSelector(drivers);
+            Car winner = RaceCars(carOne, carTwo);
             //reseting the selected value if the player chooses to play again
-                carOne.Selected = false;
-                carTwo.Selected = false;
-                driverCarOne.Selected = false;
-                driverCarTwo.Selected = false;
+            carOne.Selected = false;
+            carTwo.Selected = false;
+            driverCarOne.Selected = false;
+            driverCarTwo.Selected = false;
 
-                Console.WriteLine( $"The car that won was {winner.Model.ToString().ToUpper()}, with the speed of {winner.Speed}km/h and the driver was {winner.Driver.Name.ToString().ToUpper()}"); 
+            Console.WriteLine($"The car that won was {winner.Model.ToString().ToUpper()}, with the speed of {winner.Speed}km/h and the driver was {winner.Driver.Name.ToString().ToUpper()}");
         }
 
     }
