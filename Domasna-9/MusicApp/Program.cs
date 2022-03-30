@@ -19,19 +19,16 @@ namespace MusicApp
         //method to return the genre the user listents to the most
         public static Genre ReturnGenre()
         {
-            string answer = Console.ReadLine().ToLower();
-            switch (answer)
+            while (true)
             {
-                case "hip hop":
-                    return Genre.HipHop;
-                case "rock":
-                    return Genre.Rock;
-                case "techno":
-                    return Genre.Techno;
-                case "classical":
-                    return Genre.Classical;
-                default:
-                    return 0;
+                string answerInput = Console.ReadLine().ToLower();
+                if (!int.TryParse(answerInput, out int answer))
+                {
+                    Console.WriteLine("Invalid input");
+                    continue;
+                }
+                Genre genre = (Genre)answer;
+                return genre;
             }
         }
 
@@ -81,7 +78,7 @@ namespace MusicApp
             string lastName = Console.ReadLine();
             while (true)
             {
-                Console.WriteLine("What's your favorite music genre?");
+                Console.WriteLine($"What's your favorite music genre from the given options? \n1.Rock \n2.Hip Hop \n3.Techno \n4.Classical");
                 Genre genre = ReturnGenre();
                 if (genre != 0)
                 {
@@ -149,7 +146,7 @@ namespace MusicApp
             //repeat the return user method 2 times, so the list of users will contain 2 users
             for (int i = 0; i < 2; i++)
             {
-                users.Add(ReturnUser(i + 5));
+                users.Add(ReturnUser(users.Count + 1));
             }
             Console.Clear();
             //excersise 3
