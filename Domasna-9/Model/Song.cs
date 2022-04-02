@@ -14,7 +14,7 @@ namespace Model
             Length = length;
             Genre = genre;
         }
-        public void ReturnInfo(Song song)
+        public void ReturnInfo()
         {
             Console.WriteLine($"{Title} {Length} {Genre}"); 
         }

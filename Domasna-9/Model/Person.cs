@@ -11,9 +11,8 @@ namespace Model
         public string LastName { get; set; }
         public int Age { get; set; }
         public Genre FavoriteMusicType { get; set; }
-        public List<Song> FavoriteSongs { get; set; }
+        public List<Song> FavoriteSongs = new List<Song>();
         
-
 
         public Person(int id, string firstName, string lastName, int age, Genre genre, List<Song> favSongs)
         {
