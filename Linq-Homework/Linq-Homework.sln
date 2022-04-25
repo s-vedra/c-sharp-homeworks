@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq-Homework", "Linq-Homework\Linq-Homework.csproj", "{B8AF0F86-CACD-4310-AECD-97CAA34A0932}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{D0CB3971-F3CE-443A-B214-4DED2FBD7BBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{1C6148DB-0B72-42FC-8348-370D3D6C63E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8AF0F86-CACD-4310-AECD-97CAA34A0932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8AF0F86-CACD-4310-AECD-97CAA34A0932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8AF0F86-CACD-4310-AECD-97CAA34A0932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8AF0F86-CACD-4310-AECD-97CAA34A0932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0CB3971-F3CE-443A-B214-4DED2FBD7BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CB3971-F3CE-443A-B214-4DED2FBD7BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CB3971-F3CE-443A-B214-4DED2FBD7BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CB3971-F3CE-443A-B214-4DED2FBD7BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C6148DB-0B72-42FC-8348-370D3D6C63E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C6148DB-0B72-42FC-8348-370D3D6C63E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C6148DB-0B72-42FC-8348-370D3D6C63E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C6148DB-0B72-42FC-8348-370D3D6C63E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E20E96CE-22A9-4050-8106-D8DC0B16E099}
+	EndGlobalSection
+EndGlobal
