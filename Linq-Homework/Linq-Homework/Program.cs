@@ -52,5 +52,5 @@ HelperMethods<Dog>.PrintEntity(reqNine);
 // Find and print all white dogs names from Cristofer, Freddy, Erin and Amelia, ordered by Name - ASCENDING ORDER
 Console.WriteLine("===================================");
 List<Dog> reqTen = DataBase.People.Where(person => person.FirstName == "Cristofer" || person.FirstName == "Erin" || person.FirstName == "Amelia" || person.FirstName == "Freddy")
-    .SelectMany(dog => dog.Dogs.Where(dog => dog.Color == "White").ToList()).ToList();
+    .SelectMany(dog => dog.Dogs).Where(dog => dog.Color == "White").OrderBy(dog => dog.Name).ToList();
 HelperMethods<Dog>.PrintEntity(reqTen);
