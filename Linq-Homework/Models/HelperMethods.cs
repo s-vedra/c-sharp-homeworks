@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public static class HelperMethods<T> where T : Entity
+    public static class HelperMethods
     {
-        public static void PrintEntity(List<T> items)
+        public static void Print(this string seq)
         {
-            items.ForEach(item => Console.WriteLine(item.PrintInfo()));
+            Console.WriteLine(seq);
         }
     }
 }
